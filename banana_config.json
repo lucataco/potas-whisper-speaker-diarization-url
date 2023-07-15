@@ -1,24 +1,15 @@
 {
-    "name": "",
+    "name": "potas-whisper-speaker-diarization-url",
     "category": "",
     "example_input": {
-        "prompt": "Hello I am a [MASK] model."
+        "youtube_url": "Hello I am a [MASK] model.",
+        "wav_url": "",
+        "mp3_url": "",
+        "language": "en",
+        "num_speakers": 2
     },
     "example_output": {
-        "outputs":[
-            {
-                "score":0.13177461922168732,
-                "token":4827,
-                "token_str":"fashion",
-                "sequence":"hello i am a fashion model."
-            },
-            {
-                "score":0.1120428815484047,
-                "token":2535,
-                "token_str":"role",
-                "sequence":"hello i am a role model."
-            }
-        ]
+        "output": "[  {'speaker':'SPEAKER 1','content':'Learning Deutsch conversation lessons for beginners  Lesson 2. What do you do for work?', 'timestamp':{ 'start':'0:00:00', 'end':'0:00:21'  } },  {    'speaker':'SPEAKER 2', 'content':'Entschuldigen Sie, sind Sie Amerikaner?'..."
     },
     "version": "1"
 }
