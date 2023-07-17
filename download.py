@@ -10,7 +10,6 @@ def download_model():
     model = whisper.load_model(model_name)
     embedding_model = PretrainedSpeakerEmbedding(
         "speechbrain/spkrec-ecapa-voxceleb",
-        savedir="pretrained_models/spkrec-ecapa-voxceleb"
     )
 
 if __name__ == "__main__":
