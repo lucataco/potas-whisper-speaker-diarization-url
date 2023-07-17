@@ -29,7 +29,8 @@ def init():
     model = whisper.load_model(model_name)
     embedding_model = PretrainedSpeakerEmbedding( 
         "speechbrain/spkrec-ecapa-voxceleb",
-        device=torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        savedir="pretrained_models/spkrec-ecapa-voxceleb",
+        device=torch.device("cuda" if torch.cuda.is_available() else "cpu"),
     )
     context = {
         "model": model

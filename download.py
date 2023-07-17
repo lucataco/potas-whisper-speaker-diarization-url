@@ -8,7 +8,10 @@ def download_model():
     #medium, large-v1, large-v2
     model_name = "medium"
     model = whisper.load_model(model_name)
-    embedding_model = PretrainedSpeakerEmbedding("speechbrain/spkrec-ecapa-voxceleb")
+    embedding_model = PretrainedSpeakerEmbedding(
+        "speechbrain/spkrec-ecapa-voxceleb",
+        savedir="pretrained_models/spkrec-ecapa-voxceleb"
+    )
 
 if __name__ == "__main__":
     download_model()
